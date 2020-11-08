@@ -15,6 +15,12 @@ avatarURL = "images/me.jpg"
 hideCredits = true
 since = 2020
 
+commit = "https://github.com/TimQuelch/tquelch.com/tree/"
+
+katex = true
+colorScheme = "auto"
+hideColorSchemeToggle = false
+
 [[params.social]]
 name = "Github"
 icon = "fa fa-github fa-2x"
