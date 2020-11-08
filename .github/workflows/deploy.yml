@@ -19,11 +19,19 @@ jobs:
           extended: true
           hugo-version: '0.78.1'
 
-      - name: Build
-        run: hugo --minify --verbose
+      - name: Setup Emacs
+        uses: purcell/setup-emacs@v2.0
+        with:
+          version: '27.1'
+
+      - name: Build md pages
+        run: make export
+
+      - name: Build static site
+        run: make build
 
       - name: Deploy
-        run: hugo deploy --verbose
+        run: make deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
