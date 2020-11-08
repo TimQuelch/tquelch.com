@@ -28,9 +28,6 @@
     (install-required-packages)
   (error (install-required-packages t)))
 
-(require 'org)
-(require 'ox-hugo)
-
 ;; Enable local variables with no checks
 ;; This allows automatic setting of .dir-locals.el variables in batch mode
 (setq enable-local-variables :all)

@@ -2,7 +2,6 @@
 
 * Contact
 :PROPERTIES:
-:export_hugo_menu: :menu "contact"
 :export_hugo_section: /
 :export_file_name: contact
 :END:
@@ -18,3 +17,23 @@
 *Twitter*: [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]
 
 *GPG Public Key*: [[file:static/key.asc][key.asc]]
+* Projects
+:PROPERTIES:
+:export_hugo_section: /
+:export_file_name: projects
+:END:
+
+** My notes
+:PROPERTIES:
+:ID:       99331808-d401-476d-a41a-6f168e7bbd2f
+:END:
+
+Just before starting my PhD I came across the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] method as well as the book /How to take Smart Notes/ by Sonke Ahrens autocite:ahrensHowTakeSmart2017. Zettelkasten is a method of non-hierarchical note taking where notes contain information about a single topic and are linked together to make manual connections. I've implemented my notes repository in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package.
+
+While I've not made my notes public, I have done some data analysis and tracking of them the code which I have made public.
+- [[https://github.com/TimQuelch/notes-snapshot][notes-snapshot]]: contains the scripts and ~systemd~ unit files that I use to regularly take snapshots of my notes
+- [[https://github.com/TimQuelch/notes-timeline][notes-timeline]]: contains my data analysis written in ~Julia~
+
+** OrgMode.jl
+
+Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task management is written in [[https://orgmode.org][org mode]]. As part of my data analysis of my notes, I need to parse the ~.org~ files to differentiate the content within the files. I created [[https://github.com/TimQuelch/OrgMode.jl][OrgMode.jl]] in Julia so I had a nice native interface for my data analysis.
