@@ -37,18 +37,9 @@ icon = "fa fa-twitter fa-2x"
 weight = 3
 url = "https://twitter.com/TimQuelch/"
 
-# Menu links
-[[menu.main]]
-name = "Contact"
-weight = 1
-url = "contact/"
-[[menu.main]]
-name = "About"
-weight = 2
-url = "about/"
 [[menu.main]]
 name = "Blog"
-weight = 3
+weight = 1
 url  = "posts/"
 
 [deployment]
