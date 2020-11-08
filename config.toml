@@ -1,0 +1,52 @@
+baseURL = "https://www.tquelch.com/"
+languageCode = "en"
+title = "Tim Quelch"
+theme = "hugo-coder"
+
+googleAnalytics = "G-2K1E1DZ3HF"
+
+[params]
+author = "Tim Quelch"
+info = "PhD student at University of Melbourne"
+description = "Tim Quelch's website"
+keywords = "blog,portfolio,phd,personal"
+avatarURL = "images/me.jpg"
+
+hideCredits = true
+since = 2020
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-github fa-2x"
+weight = 1
+url = "https://github.com/TimQuelch/"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-linkedin fa-2x"
+weight = 2
+url = "https://linkedin.com/in/TimQuelch/"
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter fa-2x"
+weight = 3
+url = "https://twitter.com/TimQuelch/"
+
+# Menu links
+[[menu.main]]
+name = "Contact"
+weight = 1
+url = "contact/"
+[[menu.main]]
+name = "About"
+weight = 2
+url = "about/"
+[[menu.main]]
+name = "Blog"
+weight = 3
+url  = "posts/"
+
+[deployment]
+[[deployment.targets]]
+name = "awsdeploy"
+URL = "s3://tquelch.com?region=ap-southeast-2"
+cloudFrontDistributionID = "E3VDV2G1945VZE"
