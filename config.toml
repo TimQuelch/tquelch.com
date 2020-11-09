@@ -38,9 +38,12 @@ weight = 3
 url = "https://twitter.com/TimQuelch/"
 
 [[menu.main]]
-name = "Blog"
+name = "Posts"
 weight = 1
 url  = "posts/"
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [deployment]
 [[deployment.targets]]

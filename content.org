@@ -3,23 +3,34 @@
 * Contact
 :PROPERTIES:
 :export_hugo_section: /
+:export_hugo_menu: :menu main :weight 3
 :export_file_name: contact
 :END:
 
-*Email*: [[mailto:tim@tquelch.com][tim@tquelch.com]]
+#+begin_export html
+<style> .contact_table th, .contact_table td {border: 0; padding: 0px 15px;} </style>
+#+end_export
+#+attr_html: :class contact_table
+|                  |                                   |
+| *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                   |
+| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]] |
+| *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]              |
+| *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]         |
+| *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]             |
+| *GPG Public Key* | [[file:static/key.asc][key.asc]]                           |
 
-*University email*: [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]]
+* TODO About
+:PROPERTIES:
+:export_hugo_section: /
+:export_hugo_menu: :menu main :weight 2
+:export_file_name: about
+:END:
 
-*GitHub*: [[https://github.com/TimQuelch][github.com/TimQuelch]]
-
-*LinkedIn*: [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]
-
-*Twitter*: [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]
-
-*GPG Public Key*: [[file:static/key.asc][key.asc]]
+hi
 * Projects
 :PROPERTIES:
 :export_hugo_section: /
+:export_hugo_menu: :menu main :weight 4
 :export_file_name: projects
 :END:
 
@@ -37,3 +48,13 @@ While I've not made my notes public, I have done some data analysis and tracking
 ** OrgMode.jl
 
 Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task management is written in [[https://orgmode.org][org mode]]. As part of my data analysis of my notes, I need to parse the ~.org~ files to differentiate the content within the files. I created [[https://github.com/TimQuelch/OrgMode.jl][OrgMode.jl]] in Julia so I had a nice native interface for my data analysis.
+* Posts
+:PROPERTIES:
+:export_hugo_section: posts
+:END:
+** TODO This is a test post
+:PROPERTIES:
+:export_file_name: test-post
+:END:
+
+Here I am writing a test post
