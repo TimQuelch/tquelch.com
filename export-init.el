@@ -13,7 +13,7 @@
 (package-initialize)
 
 (defvar required-packages
-  '(org ox-hugo)
+  '(org ox-hugo citeproc-org)
   "The required packages.")
 
 (defun install-required-packages (&optional refresh)
@@ -31,6 +31,10 @@
 ;; Enable local variables with no checks
 ;; This allows automatic setting of .dir-locals.el variables in batch mode
 (setq enable-local-variables :all)
+
+(with-eval-after-load 'ox-hugo
+  (require 'citeproc-org)
+  (citeproc-org-setup))
 
 (provide 'export-init)
 ;;; export-init.el ends here
