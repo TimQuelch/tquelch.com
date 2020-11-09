@@ -1,6 +1,7 @@
 #+hugo_base_dir: .
 #+csl_style: build/ieee.csl
 #+options: author:nil
+#+startup: content
 
 * Contact
 :PROPERTIES:
@@ -40,26 +41,20 @@ hi
 :PROPERTIES:
 :ID:       99331808-d401-476d-a41a-6f168e7bbd2f
 :END:
-
-Just before starting my PhD I came across the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] method as well as the book /How to take Smart Notes/ by Sonke Ahrens autocite:ahrensHowTakeSmart2017. Zettelkasten is a method of non-hierarchical note taking where notes contain information about a single topic and are linked together to make manual connections. I've implemented my notes repository in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package.
-
-While I've not made my notes public, I have done some data analysis and tracking of them the code which I have made public.
-- [[https://github.com/TimQuelch/notes-snapshot][notes-snapshot]]: contains the scripts and ~systemd~ unit files that I use to regularly take snapshots of my notes
-- [[https://github.com/TimQuelch/notes-timeline][notes-timeline]]: contains my data analysis written in ~Julia~
+[[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package, and tracking my progress with [[https://github.com/TimQuelch/notes-snapshot][automated hourly snapshots]] as well as doing some [[https://github.com/TimQuelch/notes-timeline][basic data analysis]] in Julia
 
 ** OrgMode.jl
 
 Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task management is written in [[https://orgmode.org][org mode]]. As part of my data analysis of my notes, I need to parse the ~.org~ files to differentiate the content within the files. I created [[https://github.com/TimQuelch/OrgMode.jl][OrgMode.jl]] in Julia so I had a nice native interface for my data analysis.
+
+** This website
+
+This website is written in org mode, exported to markdown, and built with [[https://gohugo.io/][Hugo]]. The source repo is found [[https://github.com/TimQuelch/tquelch.com][here]].
+
 * Posts
 :PROPERTIES:
 :export_hugo_section: posts
 :END:
-** TODO This is a test post
-:PROPERTIES:
-:export_file_name: test-post
-:END:
-
-Here I am writing a test post
 ** Workflow :@workflow:
 *** TODO My email workflow :notmuch:emacs:email:
 :PROPERTIES:
@@ -68,9 +63,25 @@ Here I am writing a test post
 
 Talking about my email workflow
 
-*** TODO My notetaking workflow :emacs:notes:
+*** TODO My notetaking workflow :emacs:notes:org:
 :PROPERTIES:
 :export_file_name: my-notes
 :END:
 
-Talking about my notes workflow
+Just before starting my PhD I came across the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] method as well as the book /How to take Smart Notes/ by Sonke Ahrens autocite:ahrensHowTakeSmart2017. Zettelkasten is a method of non-hierarchical note taking where notes contain information about a single topic and are linked together to make manual connections. I've implemented my notes repository in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package.
+
+*** TODO Tracking my notetaking progress :notes:julia:org:
+:PROPERTIES:
+:export_file_name: tracking-notes-progress
+:END:
+
+While I've not made my notes public, I have done some data analysis and tracking of them the code which I have made public.
+- [[https://github.com/TimQuelch/notes-snapshot][notes-snapshot]]: contains the scripts and ~systemd~ unit files that I use to regularly take snapshots of my notes
+- [[https://github.com/TimQuelch/notes-timeline][notes-timeline]]: contains my data analysis written in ~Julia~
+
+*** TODO Building and deploying this website :emacs:org:
+:PROPERTIES:
+:export_file_name: building-this-website
+:END:
+
+Talking about deploying this website
