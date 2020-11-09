@@ -47,3 +47,17 @@ url  = "posts/"
 name = "awsdeploy"
 URL = "s3://tquelch.com?region=ap-southeast-2"
 cloudFrontDistributionID = "E3VDV2G1945VZE"
+
+# Cache static assets for a year. Compress things that are compressible
+# This is just taken from https://gohugo.io/hosting-and-deployment/
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
