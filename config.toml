@@ -1,49 +1,70 @@
 baseURL = "https://www.tquelch.com/"
 languageCode = "en"
+defaultContentLanguage = "en"
 title = "Tim Quelch"
-theme = "hugo-coder"
+
+theme = "LoveIt"
 
 googleAnalytics = "G-2K1E1DZ3HF"
 
+[author]
+name = "Tim Quelch"
+link = "tquelch.com"
+email = "tim@tquelch.com"
+
 [params]
-author = "Tim Quelch"
-info = "PhD student at University of Melbourne"
-description = "Tim Quelch's website"
-keywords = "blog,portfolio,phd,personal"
-avatarURL = "images/me.jpg"
+version = "0.2.X"
+description = "Tim Quelch's blog and portfolio"
+keywords = ["blog", "portfolio", "phd", "personal"]
 
-hideCredits = true
-since = 2020
+[params.home]
+[params.home.profile]
+avatarURL = "/images/me.jpg"
+typeit = false
+social = true
 
-commit = "https://github.com/TimQuelch/tquelch.com/tree/"
+[params.footer]
+enable = true
+hugo = false
+since = "2020"
 
-katex = true
-colorScheme = "auto"
-hideColorSchemeToggle = false
+[params.social]
+GitHub = "TimQuelch"
+LinkedIn = "TimQuelch"
+Twitter = "TimQuelch"
+email = "tim@tquelch.com"
 
-[[params.social]]
-name = "Github"
-icon = "fa fa-github fa-2x"
-weight = 1
-url = "https://github.com/TimQuelch/"
-[[params.social]]
-name = "LinkedIn"
-icon = "fa fa-linkedin fa-2x"
-weight = 2
-url = "https://linkedin.com/in/TimQuelch/"
-[[params.social]]
-name = "Twitter"
-icon = "fa fa-twitter fa-2x"
-weight = 3
-url = "https://twitter.com/TimQuelch/"
+[params.page]
+ruby = false
+fraction = false
+fontawesome = false
+linkToMarkdown = false
+
+[params.page.comment]
+enable = false
+
+[params.search]
+enable = false
+
+[params.cookieconsent]
+enable = false
 
 [[menu.main]]
 name = "Posts"
-weight = 1
+weight = 10
 url  = "posts/"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params.analytics]
+enable = true
+[params.analytics.google]
+id = "G-2K1E1DZ3HF"
+
+[privacy.googleAnalytics]
+disable = false
+respectDoNotTrack = true
 
 [deployment]
 [[deployment.targets]]
