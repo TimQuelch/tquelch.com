@@ -8,7 +8,7 @@
 :END:
 
 #+begin_export html
-<style> .contact_table th, .contact_table td {border: 0; padding: 0px 15px;} </style>
+<style> .contact_table th, .contact_table td {border: 0!important; padding: 0px 15px;} </style>
 #+end_export
 #+attr_html: :class contact_table
 |                  |                                   |
