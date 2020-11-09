@@ -1,4 +1,5 @@
 #+hugo_base_dir: .
+#+options: author:nil
 
 * Contact
 :PROPERTIES:
@@ -58,3 +59,17 @@ Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task managemen
 :END:
 
 Here I am writing a test post
+** Workflow :@workflow:
+*** TODO My email workflow :notmuch:emacs:email:
+:PROPERTIES:
+:export_file_name: my-email
+:END:
+
+Talking about my email workflow
+
+*** TODO My notetaking workflow :emacs:notes:
+:PROPERTIES:
+:export_file_name: my-notes
+:END:
+
+Talking about my notes workflow
