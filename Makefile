@@ -1,4 +1,4 @@
-.PHONY: build export deploy
+.PHONY: build export deploy clean
 
 export:
 	emacs -Q --batch \
@@ -12,3 +12,6 @@ build:
 
 deploy:
 	hugo deploy --verbose
+
+clean:
+	rm -rfv content public
