@@ -25,5 +25,5 @@
 
                           (advice-add 'cite-proc-org-render-references :around
                                       #'tq/citeproc-org-render-references-advice))))
-              (org-ref-default-bibliography . ("static/references.bib"))
+              (org-ref-default-bibliography . ("build/references.bib"))
               (eval . (add-to-list 'org-hugo-external-file-extensions-allowed-for-copying "asc")))))

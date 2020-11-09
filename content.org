@@ -1,4 +1,5 @@
 #+hugo_base_dir: .
+#+csl_style: build/ieee.csl
 #+options: author:nil
 
 * Contact
