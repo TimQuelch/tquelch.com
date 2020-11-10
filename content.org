@@ -6,7 +6,8 @@
 
 #+macro: avatar (eval "#+attr_html: :class avatar :width 30%\n[[file:static/images/me-small.jpg]]")
 
-* Contact
+* Pages
+** Contact
 :PROPERTIES:
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 3
@@ -30,7 +31,7 @@ You can contact with and follow through the links below
 | *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]             |
 | *GPG Public Key* | [[file:static/key.asc][key.asc]]                           |
 
-* About
+** About
 CLOSED: [2020-11-10 Tue 15:20]
 :PROPERTIES:
 :export_hugo_section: /
@@ -46,24 +47,23 @@ My main personal areas of interest are the [[https://julialang.org/][Julia]] pro
 
 I have graduated with First Class Honours with a Bachelor of Engineering (Honours) focused in Computer and Software Systems, and Computational and Simulation Science from Queensland University of Technology. I have formerly worked as a Sessional Academic at QUT where I tutored classes and ran workshops.
 
-* Projects
+** Projects
 :PROPERTIES:
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 4
 :export_file_name: projects
 :END:
 
-** My notes
+*** My notes
 :PROPERTIES:
 :ID:       99331808-d401-476d-a41a-6f168e7bbd2f
 :END:
 [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package, and tracking my progress with [[https://github.com/TimQuelch/notes-snapshot][automated hourly snapshots]] as well as doing some [[https://github.com/TimQuelch/notes-timeline][basic data analysis]] in Julia
-
-** OrgMode.jl
+*** OrgMode.jl
 
 Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task management is written in [[https://orgmode.org][org mode]]. As part of my data analysis of my notes, I need to parse the ~.org~ files to differentiate the content within the files. I created [[https://github.com/TimQuelch/OrgMode.jl][OrgMode.jl]] in Julia so I had a nice native interface for my data analysis.
 
-** This website
+*** This website
 
 This website is written in org mode, exported to markdown, and built with [[https://gohugo.io/][Hugo]]. The source repo is found [[https://github.com/TimQuelch/tquelch.com][here]].
 
@@ -101,6 +101,7 @@ While I've not made my notes public, I have done some data analysis and tracking
 :END:
 
 Talking about deploying this website
+** Research :@research:
 ** TODO Test post
 :PROPERTIES:
 :export_file_name: test-post
