@@ -26,4 +26,5 @@
                 #'tqdev/citeproc-org-render-references-advice)
     (setq-local org-ref-default-bibliography '("build/references.bib"))
     (add-to-list 'org-hugo-external-file-extensions-allowed-for-copying "asc")
-    (setq-local org-latex-prefer-user-labels t)))
+    (setq-local org-latex-prefer-user-labels t)
+    (setq-local org-hugo-date-format "%Y-%m-%d")))
