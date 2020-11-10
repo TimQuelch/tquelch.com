@@ -29,6 +29,7 @@ social = true
 enable = true
 hugo = false
 since = "2020"
+license = "<a rel=\"license\" href=\"/about/#license\">CC BY 4.0</a>"
 
 [params.social]
 GitHub = "TimQuelch"

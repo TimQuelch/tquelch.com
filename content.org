@@ -41,6 +41,11 @@ You can contact with and follow through the links below,
 | *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]                         |
 | *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]                             |
 | *GPG Public Key* | [[file:static/key.asc][DBB3 C469 1BCD C872 C63E 718D 8B0B 9C37 5D43 8A86]] |
+*** License
+
+#+begin_export html
+Except where otherwise noted, this website by <a xmlns:cc="http://creativecommons.org/ns#" href="/" property="cc:attributionName" rel="cc:attributionURL">Tim Quelch</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+#+end_export
 
 ** Projects
 :PROPERTIES:
