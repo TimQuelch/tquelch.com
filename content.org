@@ -4,48 +4,43 @@
 #+options: H:5
 #+startup: folded
 
-#+macro: avatar (eval "#+attr_html: :class avatar :width 30%\n[[file:static/images/me-small.jpg]]")
-
 * Pages
-** Contact
-:PROPERTIES:
-:export_hugo_section: /
-:export_hugo_menu: :menu main :weight 3
-:export_file_name: contact
-:END:
-
-{{{avatar}}}
-
-You can contact with and follow through the links below
-
-#+begin_export html
-<style> .contact_table th, .contact_table td {border: 0!important; padding: 0px 15px;} </style>
-#+end_export
-#+attr_html: :class contact_table
-|                  | <l>                               |
-|                  | Contact links                     |
-| *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                   |
-| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]] |
-| *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]              |
-| *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]         |
-| *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]             |
-| *GPG Public Key* | [[file:static/key.asc][key.asc]]                           |
-
 ** About
 CLOSED: [2020-11-10 Tue 15:20]
 :PROPERTIES:
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 2
 :export_file_name: about
+:export_hugo_custom_front_matter: :toc true
 :END:
 
-{{{avatar}}}
+#+attr_html: :class avatar :width 30%
+[[file:static/images/me-small.jpg]]
+
+*** About me
 
 I am currently studying my PhD at the University of Melbourne. My main area of research currently is numerical optimisation, particularly in the fields of signal processing and control systems.
 
 My main personal areas of interest are the [[https://julialang.org/][Julia]] programming, personal productivity and note-taking, emacs and [[https://orgmode.org/][org mode]]
 
 I have graduated with First Class Honours with a Bachelor of Engineering (Honours) focused in Computer and Software Systems, and Computational and Simulation Science from Queensland University of Technology. I have formerly worked as a Sessional Academic at QUT where I tutored classes and ran workshops.
+
+*** Contact me
+
+You can contact with and follow through the links below,
+
+#+begin_export html
+<style> .contact_table th, .contact_table td {border: 0!important; padding: 0px 15px;} </style>
+#+end_export
+#+attr_html: :class contact_table
+|                  | <l>                                               |
+|                  | Contact links                                     |
+| *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                                   |
+| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]]                 |
+| *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]                              |
+| *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]                         |
+| *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]                             |
+| *GPG Public Key* | [[file:static/key.asc][DBB3 C469 1BCD C872 C63E 718D 8B0B 9C37 5D43 8A86]] |
 
 ** Projects
 :PROPERTIES:
