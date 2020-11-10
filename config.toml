@@ -9,7 +9,7 @@ googleAnalytics = "G-2K1E1DZ3HF"
 
 [author]
 name = "Tim Quelch"
-link = "tquelch.com"
+link = "/"
 email = "tim@tquelch.com"
 
 [params]
@@ -19,6 +19,8 @@ keywords = ["blog", "portfolio", "phd", "personal"]
 
 [params.home]
 [params.home.profile]
+title = "Tim Quelch"
+subtitle = "PhD Student at University of Melbourne"
 avatarURL = "/images/me.jpg"
 typeit = false
 social = true
@@ -39,8 +41,25 @@ ruby = false
 fraction = false
 fontawesome = false
 linkToMarkdown = false
+rssFullText = true
+
+[params.page.toc]
+enable = true
+keepStatic = false
+auto = true
+
+[params.page.math]
+enable = true
+copytex = false
+mhchem = false
+
+[params.page.code]
+copy = false
 
 [params.page.comment]
+enable = false
+
+[params.page.share]
 enable = false
 
 [params.search]
@@ -49,10 +68,12 @@ enable = false
 [params.cookieconsent]
 enable = false
 
-[[menu.main]]
-name = "Posts"
-weight = 10
-url  = "posts/"
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
+noClasses = false
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -66,6 +87,13 @@ id = "G-2K1E1DZ3HF"
 disable = false
 respectDoNotTrack = true
 
+# Defining menu items that aren't defined in content.org
+[[menu.main]]
+name = "Posts"
+weight = 10
+url  = "posts/"
+
+# Define deployment
 [deployment]
 [[deployment.targets]]
 name = "awsdeploy"
