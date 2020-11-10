@@ -1,7 +1,8 @@
 #+hugo_base_dir: .
 #+csl_style: build/ieee.csl
 #+options: author:nil
-#+startup: content
+#+options: H:5
+#+startup: folded
 
 * Contact
 :PROPERTIES:
