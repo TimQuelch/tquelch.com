@@ -14,4 +14,4 @@ deploy:
 	hugo deploy --verbose
 
 clean:
-	rm -rfv content public
+	rm -rfv content public resources
