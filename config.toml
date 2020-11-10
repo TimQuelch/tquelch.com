@@ -21,7 +21,7 @@ keywords = ["blog", "portfolio", "phd", "personal"]
 [params.home.profile]
 title = "Tim Quelch"
 subtitle = "PhD Student at University of Melbourne"
-avatarURL = "/images/me.jpg"
+avatarURL = "/images/me-small.jpg"
 typeit = false
 social = true
 
