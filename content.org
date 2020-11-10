@@ -4,6 +4,8 @@
 #+options: H:5
 #+startup: folded
 
+#+macro: avatar (eval "#+attr_html: :class avatar :width 30%\n[[file:static/images/me-small.jpg]]")
+
 * Contact
 :PROPERTIES:
 :export_hugo_section: /
@@ -11,11 +13,16 @@
 :export_file_name: contact
 :END:
 
+{{{avatar}}}
+
+You can contact with and follow through the links below
+
 #+begin_export html
 <style> .contact_table th, .contact_table td {border: 0!important; padding: 0px 15px;} </style>
 #+end_export
 #+attr_html: :class contact_table
-|                  |                                   |
+|                  | <l>                               |
+|                  | Contact links                     |
 | *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                   |
 | *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]] |
 | *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]              |
@@ -23,14 +30,22 @@
 | *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]             |
 | *GPG Public Key* | [[file:static/key.asc][key.asc]]                           |
 
-* TODO About
+* About
+CLOSED: [2020-11-10 Tue 15:20]
 :PROPERTIES:
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 2
 :export_file_name: about
 :END:
 
-hi
+{{{avatar}}}
+
+I am currently studying my PhD at the University of Melbourne. My main area of research currently is numerical optimisation, particularly in the fields of signal processing and control systems.
+
+My main personal areas of interest are the [[https://julialang.org/][Julia]] programming, personal productivity and note-taking, emacs and [[https://orgmode.org/][org mode]]
+
+I have graduated with First Class Honours with a Bachelor of Engineering (Honours) focused in Computer and Software Systems, and Computational and Simulation Science from Queensland University of Technology. I have formerly worked as a Sessional Academic at QUT where I tutored classes and ran workshops.
+
 * Projects
 :PROPERTIES:
 :export_hugo_section: /
