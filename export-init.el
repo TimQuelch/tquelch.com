@@ -32,9 +32,8 @@
 ;; This allows automatic setting of .dir-locals.el variables in batch mode
 (setq enable-local-variables :all)
 
-(with-eval-after-load 'ox-hugo
-  (require 'citeproc-org)
-  (citeproc-org-setup))
+;; Disable backupfiles
+(setq make-backup-files nil)
 
 (provide 'export-init)
 ;;; export-init.el ends here
