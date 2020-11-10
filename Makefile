@@ -2,7 +2,7 @@
 
 export:
 	emacs -Q --batch \
-	--script export-init.el \
+	--script build/export-init.el \
 	--visit=content.org \
 	--eval="(org-hugo-export-wim-to-md :all-subtrees)" \
 	--kill

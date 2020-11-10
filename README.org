@@ -1,0 +1,6 @@
+
+* tquelch.com
+
+This repo contains the source for my website [[https://www.tquelch.com][tquelch.com]]
+
+Content from [[file:content.org]] are exported to markdown suitable for [[https://gohugo.io/][Hugo]] using [[https://ox-hugo.scripter.co/][ox-hugo]]. The website is then built and deployed using github actions.

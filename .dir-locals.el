@@ -3,6 +3,6 @@
 
 ((org-mode . ((eval . (progn
                         (load-file (expand-file-name
-                                    "tquelch-dev.el"
+                                    "build/tquelch-dev.el"
                                     (file-name-directory (buffer-file-name))))
                         (tquelch-dev-mode))))))
