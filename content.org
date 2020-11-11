@@ -106,7 +106,7 @@ Talking about deploying this website
 ** Research :@research:
 ** Meta :@meta:
 *** Hello world
-CLOSED: [2020-11-11 Wed 13:38]
+CLOSED: [2020-11-10 Tue 13:38]
 :PROPERTIES:
 :export_file_name: hello
 :END:
