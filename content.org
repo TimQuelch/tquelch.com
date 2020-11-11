@@ -13,6 +13,7 @@
 :export_hugo_menu: :menu main :weight 2
 :export_file_name: about
 :export_hugo_custom_front_matter: :toc true
+:custom_id: about
 :END:
 
 #+attr_html: :class avatar :width 30%
@@ -53,8 +54,8 @@ Except where otherwise noted, this website by <a xmlns:cc="http://creativecommon
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 4
 :export_file_name: projects
+:custom_id: projects
 :END:
-
 *** My notes
 :PROPERTIES:
 :ID:       99331808-d401-476d-a41a-6f168e7bbd2f
@@ -103,6 +104,16 @@ While I've not made my notes public, I have done some data analysis and tracking
 
 Talking about deploying this website
 ** Research :@research:
+** Meta :@meta:
+*** Hello world
+CLOSED: [2020-11-11 Wed 13:38]
+:PROPERTIES:
+:export_file_name: hello
+:END:
+
+I'm planning on using this website/blog as a place for me to post anything that I develop or create, as well as share about how I work and what I'm working on. I'm still trying to lock down the exact content I'll be posting, but I have a few ideas and I'll see how they go.
+
+You can find more information about me [[#about][here]] and a list of my current projects on [[#projects][here]].
 ** DRAFT Test post
 :PROPERTIES:
 :export_hugo_bundle: test-post
@@ -144,7 +155,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempo
 
 #+name: this-me
 #+caption: A picture of me
-[[file:build/assets/test-post/me.jpg]]
+[[file:build/assets/test-post/test-image.jpg]]
 
 Figure ref:this-me -- this is a ~org-ref~ =ref:...= link. It doesn't really work
 
