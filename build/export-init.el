@@ -13,7 +13,7 @@
 (package-initialize)
 
 (defvar required-packages
-  '(org ox-hugo citeproc-org)
+  '(org ox-hugo citeproc-org magit)
   "The required packages.")
 
 (defun install-required-packages (&optional refresh)

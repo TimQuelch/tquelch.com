@@ -69,6 +69,9 @@ Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task managemen
 
 This website is written in org mode, exported to markdown, and built with [[https://gohugo.io/][Hugo]]. The source repo is found [[https://github.com/TimQuelch/tquelch.com][here]].
 
+*** My emacs config
+My emacs configuration can be found [[id:6654c64e-7fa2-41d4-9bff-90bd6d54854a][here]] ([[https://github.com/TImQuelch/emacs.d.git][source repo]])
+
 * Posts
 :PROPERTIES:
 :export_hugo_section: posts
@@ -103,6 +106,27 @@ While I've not made my notes public, I have done some data analysis and tracking
 :END:
 
 Talking about deploying this website
+*** My Emacs config :emacs:
+CLOSED: [2020-11-11 Wed 17:40]
+:PROPERTIES:
+:export_file_name: emacs-config
+:ID:       6654c64e-7fa2-41d4-9bff-90bd6d54854a
+:END:
+
+#+name: githublink
+#+begin_src emacs-lisp :results raw :exports none
+(let ((default-directory (expand-file-name "build/emacs.d" default-directory)))
+  (concat
+   "[[https://github.com/TimQuelch/emacs.d/tree/"
+   (magit-rev-parse "HEAD")
+   "]["
+   (magit-rev-parse "--short" "HEAD")
+   "]]"))
+#+end_src
+
+Below is my emacs configuration generated from its [[https://github.com/TimQuelch/emacs.d][source repo]]. This version is generated from commit call_githublink().
+
+#+include: build/emacs.d/config.org
 ** Research :@research:
 ** Meta :@meta:
 *** Hello world
@@ -210,9 +234,3 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempo
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
 
 Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-** DRAFT My Emacs config
-:PROPERTIES:
-:export_file_name: emacs-config
-:END:
-
-#+include: build/emacs.d/config.org

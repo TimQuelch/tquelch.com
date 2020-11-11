@@ -1,6 +1,7 @@
 (require 'org-id)
 (require 'ox-hugo)
 (require 'citeproc-org)
+(require 'magit)
 
 (defun tqdev/min-headline-level ()
   (--> (org-element-parse-buffer)
