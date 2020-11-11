@@ -104,7 +104,9 @@ Talking about deploying this website
 ** Research :@research:
 ** TODO Test post
 :PROPERTIES:
-:export_file_name: test-post
+:export_hugo_bundle: test-post
+:export_file_name: index
+:export_hugo_custom_front_matter: :license "GPL3"
 :END:
 *** This is a headline
 
@@ -141,7 +143,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempo
 
 #+name: this-me
 #+caption: A picture of me
-[[file:static/images/me.jpg]]
+[[file:build/assets/test-post/me.jpg]]
 
 Figure ref:this-me -- this is a ~org-ref~ =ref:...= link. It doesn't really work
 
