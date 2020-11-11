@@ -3,10 +3,11 @@
 #+options: author:nil
 #+options: H:5
 #+startup: folded
+#+todo: DRAFT(r) | PUBLISHED(p)
+#+todo: TODO(t) | DONE(d)
 
 * Pages
 ** About
-CLOSED: [2020-11-10 Tue 15:20]
 :PROPERTIES:
 :export_hugo_section: /
 :export_hugo_menu: :menu main :weight 2
@@ -72,21 +73,21 @@ This website is written in org mode, exported to markdown, and built with [[http
 :export_hugo_section: posts
 :END:
 ** Workflow :@workflow:
-*** TODO My email workflow :notmuch:emacs:email:
+*** DRAFT My email workflow :notmuch:emacs:email:
 :PROPERTIES:
 :export_file_name: my-email
 :END:
 
 Talking about my email workflow
 
-*** TODO My notetaking workflow :emacs:notes:org:
+*** DRAFT My notetaking workflow :emacs:notes:org:
 :PROPERTIES:
 :export_file_name: my-notes
 :END:
 
 Just before starting my PhD I came across the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] method as well as the book /How to take Smart Notes/ by Sonke Ahrens autocite:ahrensHowTakeSmart2017. Zettelkasten is a method of non-hierarchical note taking where notes contain information about a single topic and are linked together to make manual connections. I've implemented my notes repository in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package.
 
-*** TODO Tracking my notetaking progress :notes:julia:org:
+*** DRAFT Tracking my notetaking progress :notes:julia:org:
 :PROPERTIES:
 :export_file_name: tracking-notes-progress
 :END:
@@ -95,14 +96,14 @@ While I've not made my notes public, I have done some data analysis and tracking
 - [[https://github.com/TimQuelch/notes-snapshot][notes-snapshot]]: contains the scripts and ~systemd~ unit files that I use to regularly take snapshots of my notes
 - [[https://github.com/TimQuelch/notes-timeline][notes-timeline]]: contains my data analysis written in ~Julia~
 
-*** TODO Building and deploying this website :emacs:org:
+*** DRAFT Building and deploying this website :emacs:org:
 :PROPERTIES:
 :export_file_name: building-this-website
 :END:
 
 Talking about deploying this website
 ** Research :@research:
-** TODO Test post
+** DRAFT Test post
 :PROPERTIES:
 :export_hugo_bundle: test-post
 :export_file_name: index

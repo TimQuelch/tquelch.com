@@ -16,10 +16,16 @@
                   (string-trim-left citeproc-org-org-bib-header "\\**"))))
     (apply orig args)))
 
+(defun tqdev/remove-published ()
+  (when (equal org-state "PUBLISHED")
+              (org-todo "")
+              (org-add-planning-info 'closed (org-current-effective-time))))
+
 (define-minor-mode tquelch-dev-mode
   "Minor mode for developing my website"
   :lighter " tqdev"
-  (when tquelch-dev-mode
+  (cond
+   (tquelch-dev-mode
     (citeproc-org-setup)
     (setq-local citeproc-org-org-bib-header "* References\n")
     (advice-add 'cite-proc-org-render-references :around
@@ -27,4 +33,9 @@
     (setq-local org-ref-default-bibliography '("build/references.bib"))
     (add-to-list 'org-hugo-external-file-extensions-allowed-for-copying "asc")
     (setq-local org-latex-prefer-user-labels t)
-    (setq-local org-hugo-date-format "%Y-%m-%d")))
+    (setq-local org-hugo-date-format "%Y-%m-%d")
+    (add-hook 'org-after-todo-state-change-hook #'tqdev/remove-published))
+   (t
+    (advice-remove 'cite-proc-org-render-references
+                   #'tqdev/citeproc-org-render-references-advice)
+    (remove-hook 'org-after-todo-state-change-hook #'tqdev/remove-published))))
