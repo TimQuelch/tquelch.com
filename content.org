@@ -111,6 +111,7 @@ CLOSED: [2020-11-11 Wed 17:40]
 :PROPERTIES:
 :export_file_name: emacs-config
 :ID:       6654c64e-7fa2-41d4-9bff-90bd6d54854a
+:export_hugo_custom_front_matter: :license "GPL3"
 :END:
 
 #+name: githublink
