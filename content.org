@@ -35,14 +35,15 @@ You can contact with and follow through the links below,
 <style> .contact_table th, .contact_table td {border: 0!important; padding: 0px 15px;} </style>
 #+end_export
 #+attr_html: :class contact_table
-|                  | <l>                                               |
-|                  | Contact links                                     |
-| *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                                   |
-| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]]                 |
-| *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]                              |
-| *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]                         |
-| *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]                             |
-| *GPG Public Key* | [[file:static/key.asc][DBB3 C469 1BCD C872 C63E 718D 8B0B 9C37 5D43 8A86]] |
+|                  | <l>                                             |
+|                  | Contact links                                   |
+| *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                                 |
+| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]]               |
+| *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]                            |
+| *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]                       |
+| *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]                           |
+| *Keybase*        | [[https://keybase.io/TimQuelch][keybase.io/TimQuelch]]                            |
+| *GPG Public Key* | [[file:static/key.asc][CAE8 E881 8C4B 8B84]]  (old: [[file:static/key-old.asc][8B0B 9C37 5D43 8A86]]) |
 *** License
 
 #+begin_export html
