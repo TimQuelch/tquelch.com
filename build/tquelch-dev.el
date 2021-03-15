@@ -35,7 +35,8 @@
     (add-to-list 'org-hugo-external-file-extensions-allowed-for-copying "asc")
     (setq-local org-latex-prefer-user-labels t)
     (setq-local org-hugo-date-format "%Y-%m-%d")
-    (add-hook 'org-after-todo-state-change-hook #'tqdev/remove-published))
+    (add-hook 'org-after-todo-state-change-hook #'tqdev/remove-published)
+    (setq-local org-footnote-section nil))
    (t
     (advice-remove 'cite-proc-org-render-references
                    #'tqdev/citeproc-org-render-references-advice)
