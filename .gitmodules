@@ -4,3 +4,6 @@
 [submodule "build/emacs.d"]
 	path = build/emacs.d
 	url = git@github.com:TimQuelch/emacs.d.git
+[submodule "themes/uBlogger"]
+	path = themes/uBlogger
+	url = git@github.com:TimQuelch/uBlogger.git

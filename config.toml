@@ -3,7 +3,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "Tim Quelch"
 
-theme = "LoveIt"
+theme = "uBlogger"
 
 googleAnalytics = "G-2K1E1DZ3HF"
 
@@ -13,7 +13,7 @@ link = "/"
 email = "tim@tquelch.com"
 
 [params]
-version = "0.2.X"
+version = "2.0.X"
 description = "Tim Quelch's blog and portfolio"
 keywords = ["blog", "portfolio", "phd", "personal"]
 
