@@ -1,0 +1,24 @@
+.summary {
+    margin: 2rem 0;
+
+    .summary-title {
+        margin: 0 0 0.3em 0;
+        @include link(false);
+    }
+
+    .summary-post-tags, .summary-post-meta {
+        @include link(true);
+    }
+
+    .summary-post-meta {
+        margin: 0 0 0.3em 0;
+    }
+
+    .summary-post-tags {
+        margin: 0.3em 0 0 0;
+    }
+
+    .summary-content {
+        display: block;
+    }
+}

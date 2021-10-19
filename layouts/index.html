@@ -1,0 +1,9 @@
+{{- define "content" -}}
+    <article class="page index">
+        {{- partial "profile.html" . -}}
+
+        {{- range ( where .Site.RegularPages "Type" "posts" ) -}}
+            {{- .Render "summary" -}}
+        {{- end -}}
+    </article>
+{{- end -}}

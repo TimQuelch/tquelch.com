@@ -1,0 +1,32 @@
+html {
+    font-family: $global-font-family;
+    font-weight: $global-font-weight;
+    font-size: $global-font-size;
+    line-height: $global-line-height;
+}
+
+body {
+    background-color: $global-background-color;
+    color: $global-font-color;
+    margin: 0;
+}
+
+.meta-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.meta-tags {
+    margin-right: 5px;
+}
+
+.page {
+    max-width: 800px;
+    min-width: 200px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 1em;
+
+    @include link(true);
+}

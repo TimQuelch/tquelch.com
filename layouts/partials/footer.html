@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="footer-line">
+        ©
+        {{ with .Site.Params.footer.since -}}
+        <span> {{- if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year -}} </span>
+        {{- else -}}
+        <span>{{ now.Year }}</span>
+        {{- end }}
+        {{ .Site.Author.name }}
+        {{- with .Site.Params.footer.license }}
+        | <span class=licence>{{ . | safeHTML }}</span>
+        {{- end -}}
+    </div>
+</footer>

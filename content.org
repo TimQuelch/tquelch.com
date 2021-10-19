@@ -16,7 +16,7 @@
 :custom_id: about
 :END:
 
-#+attr_html: :class avatar :width 30%
+#+attr_html: :class profile-photo
 [[file:static/images/me-small.jpg]]
 
 *** About me

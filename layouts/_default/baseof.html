@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <title>
+            {{- block "title". }}{{ .Site.Params.Title }}{{ end -}}
+        </title>
+        {{- partial "head.html" . -}}
+        <meta name="description" content="{{ .Site.Params.Description }}"/>
+        {{ template "_internal/google_analytics.html" . }}
+        {{ template "_internal/opengraph.html" . }}
+        {{ template "_internal/twitter_cards.html" . }}
+    </head>
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- block "content" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

@@ -1,0 +1,23 @@
+.archive {
+    h2 {
+        margin: 1em 0 0.2em 0;
+    }
+
+    h3 {
+        margin: 0.5em 0 0.2em 0;
+    }
+
+    .archive-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0 0 0 1em;
+
+        @include link(true);
+
+        .archive-item-date {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Params.Title }}{{ end -}}
+
+{{- define "content" -}}
+<div class="page post">
+    <h1 class="post-title">
+        {{- .Title -}}
+    </h1>
+
+    <div class="post-meta">
+        {{- $categories := slice -}}
+        {{- range .Params.categories -}}
+        {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
+        {{- $categories = $categories | append (printf `<span class="fas fa-folder meta-icon"></span><a href="%v">%v</a>` $category.RelPermalink $category.Title) -}}
+        {{- end -}}
+        {{- with delimit $categories "&nbsp;" -}}
+        <span class="meta-item post-category">
+            {{ . }}
+        </span>
+        {{- end -}}
+
+        {{- with .Site.Params.dateFormat | default "2006-01-02" | .PublishDate.Format -}}
+        {{- $timeAgoDate:= $.Site.Params.TimeAgo.DateFormat | default "2006-01-02" | $.PublishDate.Format -}}
+        <span class="meta-item post-publish">
+            <span class="fas fa-clock meta-icon"></span>
+            {{- printf `<time class="timeago" datetime="%v">%v</time>` $timeAgoDate . | safeHTML -}}
+        </span>
+        {{- end -}}
+
+        {{- with $.Params.tags -}}
+        <span class="meta-item post-tags">
+            <span class="fas fa-tags meta-icon"></span>
+            {{- range $index, $value := . -}}
+            {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
+            <a class="meta-tags" href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+            {{- end -}}
+        </span>
+        {{- end -}}
+        <span class="meta-item post-reading">
+            <span class="fas fa-stopwatch meta-icon"></span>
+            {{- $.ReadingTime }} minutes
+        </span>
+    </div>
+    <div class="content" id="content">
+        {{ .Content }}
+    </div>
+</div>
+{{- end -}}

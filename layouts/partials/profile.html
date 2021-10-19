@@ -1,0 +1,23 @@
+<aside class="profile">
+    {{- $profile := .Site.Params.home }}
+    {{- $photo := $profile.photoURL -}}
+    {{- if $photo -}}
+    <div class="profile-photo">
+        <img src="{{ $photo | safeURL }}" alt="profile photo" title="profile photo">
+    </div>
+    {{- end -}}
+
+    <div class="profile-meta">
+        {{- with $profile.title -}}
+        <div class="profile-title">
+            {{- . | safeHTML -}}
+        </div>
+        {{- end -}}
+
+        {{- with $profile.subtitle -}}
+        <div class="profile-subtitle">
+            {{- . | safeHTML -}}
+        </div>
+        {{- end -}}
+    </div>
+</aside>

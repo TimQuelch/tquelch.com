@@ -1,0 +1,42 @@
+{{- define "title" }}
+All {{ .Section }} - {{ .Site.Params.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+<div class="page archive">
+    <h1 class="single-title">
+        All {{ .Data.Plural -}}
+    </h1>
+
+    {{- $type := .Type -}}
+
+    <div class="category-list">
+        {{- range .Data.Terms.ByCount -}}
+        {{- $pages := .Pages -}}
+        <div class="category-item">
+            {{ with $.Site.GetPage (printf "%v/%v" $type .Term) }}
+            <h2>
+                <span class="fas fa-folder category-item-icon"></span>
+                <a class="category-heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            {{- range first $.Site.Params.Categories.LinksShown $pages }}
+            <article class="archive-item">
+                <a href="{{ .RelPermalink }}" class="archive-item-link">
+                    {{- .Title -}}
+                </a>
+                <span class="archive-item-date">
+                    {{- .Date.Format "2006-01-02" -}}
+                </span>
+            </article>
+            {{- end -}}
+            {{- if gt (len $pages) $.Site.Params.Categories.LinksShown -}}
+            <span class="more-posts">
+                <a href="{{ .RelPermalink }}">More posts</a>
+            </span>
+            {{- end -}}
+            {{- end -}}
+        </div>
+        {{- end -}}
+    </div>
+</div>
+{{- end -}}

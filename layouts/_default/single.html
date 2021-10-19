@@ -1,0 +1,13 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Params.Title }}{{ end -}}
+
+{{- define "content" -}}
+<div class="page single">
+    <h1 class="single-title">
+        {{- .Title -}}
+    </h1>
+
+    <div class="content" id="content">
+        {{ .Content }}
+    </div>
+</div>
+{{- end -}}

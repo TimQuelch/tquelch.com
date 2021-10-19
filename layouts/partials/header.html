@@ -1,0 +1,28 @@
+<header>
+    <div class="header" id="header-desktop">
+        <div class="header-title">
+            <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Params.Title }}">
+                {{ .Site.Params.Title }}
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    {{- range .Site.Menus.main -}}
+                    {{- $url := .URL | relLangURL -}}
+                    {{- with .Page -}}
+                    {{- $url = .RelPermalink -}}
+                    {{- end -}}
+                    <li>
+                        <a class="menu-item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }} active{{ end }}"
+                           href="{{ $url }}"
+                           {{ with .Title }} title="{{ . }}"{{ end }} >
+                            {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

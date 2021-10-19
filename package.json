@@ -1,0 +1,22 @@
+{
+  "name": "tquelch.com",
+  "version": "1.0.0",
+  "description": "* tquelch.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp node_modules/@fortawesome/fontawesome-free/scss/* assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimQuelch/tquelch.com.git"
+  },
+  "author": "Tim Quelch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimQuelch/tquelch.com/issues"
+  },
+  "homepage": "https://github.com/TimQuelch/tquelch.com#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

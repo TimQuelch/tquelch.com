@@ -1,9 +1,6 @@
 baseURL = "https://www.tquelch.com/"
 languageCode = "en"
 defaultContentLanguage = "en"
-title = "Tim Quelch"
-
-theme = "uBlogger"
 
 googleAnalytics = "G-2K1E1DZ3HF"
 
@@ -13,87 +10,36 @@ link = "/"
 email = "tim@tquelch.com"
 
 [params]
-version = "2.0.X"
+title = "Tim Quelch"
 description = "Tim Quelch's blog and portfolio"
+images = ['/images/me-small.jpg']
 keywords = ["blog", "portfolio", "phd", "personal"]
+locale = "en_AU"
 
 [params.home]
-[params.home.profile]
 title = "Tim Quelch"
 subtitle = "PhD Student at University of Melbourne"
-avatarURL = "/images/me-small.jpg"
-typeit = false
-social = true
+photoURL = "/images/me-small.jpg"
 
 [params.footer]
-enable = true
-hugo = false
 since = "2020"
 license = "<a rel=\"license\" href=\"/about/#license\">CC BY 4.0</a>"
 
-[params.social]
-GitHub = "TimQuelch"
-LinkedIn = "TimQuelch"
-Twitter = "TimQuelch"
-Keybase = "TimQuelch"
-email = "tim@tquelch.com"
-
-[params.page]
-ruby = false
-fraction = false
-fontawesome = false
-linkToMarkdown = false
-rssFullText = true
-
-[params.page.toc]
-enable = true
-keepStatic = false
-auto = true
-
-[params.page.math]
-enable = true
-copytex = false
-mhchem = false
-
-[params.page.code]
-copy = false
-
-[params.page.comment]
-enable = false
-
-[params.page.share]
-enable = false
-
-[params.search]
-enable = false
-
-[params.cookieconsent]
-enable = false
-
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNos = true
-lineNumbersInTable = true
-noClasses = false
-
-[markup.goldmark.renderer]
-unsafe = true
-
-[params.analytics]
-enable = true
-[params.analytics.google]
-id = "G-2K1E1DZ3HF"
-
-[privacy.googleAnalytics]
-disable = false
-respectDoNotTrack = true
+[params.categories]
+linksshown = 5
 
 # Defining menu items that aren't defined in content.org
 [[menu.main]]
 name = "Posts"
 weight = 10
 url  = "posts/"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "monokailight"
+tabWidth = 4
 
 # Define deployment
 [deployment]
