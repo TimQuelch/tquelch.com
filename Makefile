@@ -1,4 +1,4 @@
-.PHONY: build export deploy clean
+.PHONY: build export deploy clean deps
 
 export:
 	emacs -Q --batch \
@@ -15,3 +15,6 @@ deploy:
 
 clean:
 	rm -rfv content public resources
+
+deps:
+	mkdir -p assets/css/fontawesome static/webfonts && npm install && npm run build
