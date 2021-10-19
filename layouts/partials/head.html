@@ -1,4 +1,9 @@
+<meta charset="utf-8">
+<meta name="description" content="{{ .Site.Params.Description }}"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+{{ template "_internal/google_analytics.html" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
 {{ $style := resources.Get "css/style.scss" | resources.ToCSS $options }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
