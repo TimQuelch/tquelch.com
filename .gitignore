@@ -4,4 +4,3 @@ content/
 assets/css/fontawesome
 static/webfonts
 node_modules
-package-lock.json
