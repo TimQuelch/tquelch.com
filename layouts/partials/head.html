@@ -7,3 +7,4 @@
 {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
 {{ $style := resources.Get "css/style.scss" | resources.ToCSS $options }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{- partial "katex.html" -}}

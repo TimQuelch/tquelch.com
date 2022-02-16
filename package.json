@@ -4,7 +4,7 @@
   "description": "* tquelch.com",
   "main": "index.js",
   "scripts": {
-    "build": "cp node_modules/@fortawesome/fontawesome-free/scss/* assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts"
+    "build": "cp node_modules/@fortawesome/fontawesome-free/scss/* assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts && cp -r node_modules/katex/dist/* static/katex"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TimQuelch/tquelch.com#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "katex": "^0.15.2"
   }
 }

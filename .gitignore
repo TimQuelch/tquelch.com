@@ -3,4 +3,5 @@ resources/
 content/
 assets/css/fontawesome
 static/webfonts
+static/katex
 node_modules
