@@ -3,15 +3,215 @@ $fa-font-path: "../webfonts";
 @import "fontawesome/solid.scss";
 @import "normalize/normalize";
 
-@import "_variables";
+$global-font-family: sans-serif;
+$global-font-size: 16px;
+$global-font-weight: 400;
+$global-font-color: #161209;
 
-@import "_mixin/_link";
+$content-line-height: 1.6;
 
-@import "_archive";
-@import "_base";
-@import "_figure";
-@import "_footer";
-@import "_header";
-@import "_index";
-@import "_summary";
-@import "_variables";
+$global-background-color: #ffffff;
+$header-background-color: #eee;
+
+$global-color-accent: #2c678d;
+$global-link-color: #161209;
+$global-link-hover-color: $global-color-accent;
+$content-link-color: $global-color-accent;
+
+@mixin link($color) {
+  a,
+  a::before,
+  a::after {
+    text-decoration: none;
+    color: if($color, $content-link-color, $global-link-color);
+  }
+
+  a:active,
+  a:hover {
+    @if $color {
+      text-decoration: underline;
+      color: $global-link-hover-color;
+    } @else {
+      color: $global-link-hover-color;
+    }
+  }
+}
+
+.archive {
+  h2 {
+    margin: 1em 0 0.2em 0;
+  }
+
+  h3 {
+    margin: 0.2em 0 0.2em 0.5em;
+  }
+
+  .archive-item {
+    margin-left: 1em;
+
+    .archive-item-link {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+html {
+  font-family: $global-font-family;
+  font-weight: $global-font-weight;
+  font-size: $global-font-size;
+}
+
+body {
+  background-color: $global-background-color;
+  color: $global-font-color;
+}
+
+#content {
+  line-height: $content-line-height;
+}
+
+.meta-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.meta-tags {
+  margin-right: 5px;
+}
+
+.page {
+  max-width: 900px;
+  min-width: 200px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 0.5em 1.5em;
+
+  @include link(true);
+}
+
+figure {
+  margin: 0.5rem;
+  text-align: center;
+
+  img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  figcaption {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    font-size: 90%;
+
+    min-width: 20%;
+    max-width: 80%;
+    display: inline-block;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin: 3em 0 1.5em 0;
+  @include link(false);
+}
+
+.header {
+  padding: 0.2em 5vw 0.2em 5vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+
+  background-color: $header-background-color;
+
+  @include link(false);
+
+  .header-title {
+    font-weight: bold;
+    flex: 10;
+    overflow: hidden;
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    nav {
+      display: inline-block;
+    }
+
+    .menu-item {
+      margin: 0 0.5em;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        list-style: none;
+        font-size: 1.1rem;
+      }
+    }
+
+    a.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.index {
+  .profile {
+    padding: 0 0 0.5rem 0;
+    text-align: center;
+
+    .profile-title {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .profile-subtitle {
+      font-weight: normal;
+      font-size: 1rem;
+    }
+  }
+}
+
+.profile-photo {
+  img {
+    display: inline-block;
+    width: 20rem;
+    border-radius: 20%;
+    box-shadow: 0 0 0.3em 0.3em rgba(0, 0, 0, 0.1);
+  }
+}
+
+.summary {
+  margin: 1.3rem 0;
+
+  .summary-title {
+    margin: 0 0 0.1em 0;
+    @include link(false);
+  }
+
+  .summary-post-tags,
+  .summary-post-meta {
+    @include link(true);
+  }
+
+  .summary-post-meta {
+    margin: 0 0 0.3em 0;
+  }
+
+  .summary-post-tags {
+    margin: 0.3em 0 0 0;
+  }
+
+  .summary-content {
+    display: block;
+  }
+}
