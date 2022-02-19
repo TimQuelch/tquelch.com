@@ -4,9 +4,9 @@
   "description": "* tquelch.com",
   "main": "index.js",
   "scripts": {
-    "build-fontawesome": "mkdir -p assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/scss/* $_",
-    "build-normalize": "mkdir -p assets/css/normalize && cp -r node_modules/normalize.css/* $_",
-    "build-katex": "mkdir -p static/katex && cp -r node_modules/katex/dist/* $_",
+    "build-fontawesome": "mkdir -p static/webfonts assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/scss/* assets/css/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/* static/webfonts",
+    "build-normalize": "mkdir -p assets/css/normalize && cp -r node_modules/normalize.css/* assets/css/normalize",
+    "build-katex": "mkdir -p static/katex && cp -r node_modules/katex/dist/* static/katex",
     "build": "npm run build-fontawesome && npm run build-normalize && npm run build-katex"
   },
   "repository": {
