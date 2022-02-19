@@ -51,11 +51,11 @@ cloudFrontDistributionID = "E3VDV2G1945VZE"
 # Cache static assets for a year. Compress things that are compressible
 # This is just taken from https://gohugo.io/hosting-and-deployment/
 [[deployment.matchers]]
-pattern = "^.+\\.(js|css|svg|ttf)$"
+pattern = "^.+\\.(js|css|svg|ttf|eot)$"
 cacheControl = "max-age=31536000, no-transform, public"
 gzip = true
 [[deployment.matchers]]
-pattern = "^.+\\.(png|jpg)$"
+pattern = "^.+\\.(png|jpg|woff|woff2)$"
 cacheControl = "max-age=31536000, no-transform, public"
 gzip = false
 [[deployment.matchers]]
