@@ -2,6 +2,7 @@ public/
 resources/
 content/
 assets/css/fontawesome
+assets/css/normalize
 static/webfonts
 static/katex
 node_modules
