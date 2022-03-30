@@ -140,6 +140,8 @@ CLOSED: [2022-03-30 Wed 17:55]
 
 Recently I had a project where I had to run several thousand different tests of an algorithm with ranges of different parameter values. Each of these tests takes between 5-40min to run on a single CPU. This is a fairly common scenario, and one that can be quite easily tackled with the massive parallelism offered by distributed computing clusters.
 
+#+hugo: more
+
 These clusters are often run by universities or labs and are usually shared between many hundreds of users over multiple institutions. In order to manage compute resources and handle job submission and queueing, workload managers such as [[https://www.schedmd.com/][Slurm]] and [[https://www.openpbs.org/][PBS]] are used. Users can submit jobs to the job queue, and these are then allocated compute nodes and memory to execute their work.
 
 There are two main methods that I have seen for running a large number of tests over a range of parameter tuples on high performance clusters:
