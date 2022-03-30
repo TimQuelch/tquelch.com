@@ -9,11 +9,10 @@
 ;; Set up package repos
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
 
 (defvar required-packages
-  '(org ox-hugo citeproc-org magit)
+  '(org ox-hugo citeproc-org magit dash)
   "The required packages.")
 
 (defun install-required-packages (&optional refresh)
@@ -21,12 +20,11 @@
   (when refresh
     (package-refresh-contents))
   (dolist (p required-packages)
-    (package-install p t)))
+    (package-install p t))
+  (org-version nil t t))
 
-;; Install the packages, if any aren't found, refresh the package list and try again
-(condition-case nil
-    (install-required-packages)
-  (error (install-required-packages t)))
+;; Install the packages, refresh contents to make sure getting latest versions
+(install-required-packages t)
 
 ;; Enable local variables with no checks
 ;; This allows automatic setting of .dir-locals.el variables in batch mode
