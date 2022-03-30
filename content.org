@@ -2,7 +2,7 @@
 #+csl_style: build/ieee.csl
 #+options: author:nil
 #+options: H:5
-#+startup: folded
+#+startup: show2levels
 #+todo: DRAFT(r) | PUBLISHED(p)
 #+todo: TODO(t) | DONE(d)
 
