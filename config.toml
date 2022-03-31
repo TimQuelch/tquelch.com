@@ -38,6 +38,8 @@ url  = "posts/"
 unsafe = true
 
 [markup.highlight]
+noClasses = false
+lineNos = true
 style = "monokailight"
 tabWidth = 4
 

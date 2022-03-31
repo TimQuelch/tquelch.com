@@ -2,6 +2,7 @@ $fa-font-path: "../webfonts";
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/solid.scss";
 @import "normalize/normalize";
+@import "highlight.scss";
 
 $global-font-family: sans-serif;
 $global-font-size: 16px;
@@ -216,6 +217,28 @@ figure {
   }
 }
 
+// Vertical bar on left
+blockquote {
+  border-left: 3px solid #ddd;
+  margin-left: -24px;
+  padding-left: 21px;
+}
+
+// Vertical bar on left and horizontal scrollbar
 .highlight {
   overflow-x: auto;
+  border-left: 3px solid #ddd;
+  margin-left: -24px;
+  padding-left: 21px;
+}
+
+// Reduce vertical spacing around code blocks
+pre.chroma {
+    margin: 0.5em 0;
+}
+
+// Grey background on inline code (not block code)
+code:not(pre code) {
+  background-color: #eee;
+  padding: 0 0.25em;
 }
