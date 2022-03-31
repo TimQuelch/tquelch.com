@@ -293,8 +293,6 @@ There are a few improvements that can be made:
 
 Full example scripts for can be found in [[https://gist.github.com/TimQuelch/58beddfb781099e05b0d472de5f3be94][this gist]].
 
-
->>>>>>> 29418b3 (Write article on Distributed computing with Julia)
 ** Meta :@meta:
 *** Hello world
 CLOSED: [2020-11-10 Tue 13:38]
