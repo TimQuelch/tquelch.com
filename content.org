@@ -62,9 +62,6 @@ Except where otherwise noted, this website by <a xmlns:cc="http://creativecommon
 :ID:       99331808-d401-476d-a41a-6f168e7bbd2f
 :END:
 [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org mode]] and the [[https://github.com/org-roam/org-roam][org-roam]] package, and tracking my progress with [[https://github.com/TimQuelch/notes-snapshot][automated hourly snapshots]] as well as doing some [[https://github.com/TimQuelch/notes-timeline][basic data analysis]] in Julia
-*** OrgMode.jl
-
-Many of my [[id:99331808-d401-476d-a41a-6f168e7bbd2f][notes]] and task management is written in [[https://orgmode.org][org mode]]. As part of my data analysis of my notes, I need to parse the ~.org~ files to differentiate the content within the files. I created [[https://github.com/TimQuelch/OrgMode.jl][OrgMode.jl]] in Julia so I had a nice native interface for my data analysis.
 
 *** This website
 
