@@ -18,7 +18,7 @@ locale = "en_AU"
 
 [params.home]
 title = "Tim Quelch"
-subtitle = "PhD Student at University of Melbourne"
+subtitle = "Software/DevOps Engineer"
 photoURL = "/images/me-small.jpg"
 
 [params.footer]

@@ -19,14 +19,6 @@
 #+attr_html: :class profile-photo
 [[file:static/images/me-small.jpg]]
 
-*** About me
-
-I am currently studying my PhD at the University of Melbourne. My main area of research currently is numerical optimisation, particularly in the fields of signal processing and control systems.
-
-My main personal areas of interest are the [[https://julialang.org/][Julia]] programming, personal productivity and note-taking, emacs and [[https://orgmode.org/][org mode]]
-
-I have graduated with First Class Honours with a Bachelor of Engineering (Honours) focused in Computer and Software Systems, and Computational and Simulation Science from Queensland University of Technology. I have formerly worked as a Sessional Academic at QUT where I tutored classes and ran workshops.
-
 *** Contact me
 
 You can contact with and follow through the links below,
@@ -38,7 +30,6 @@ You can contact with and follow through the links below,
 |                  | <l>                                             |
 |                  | Contact links                                   |
 | *Email*          | [[mailto:tim@tquelch.com][tim@tquelch.com]]                                 |
-| *Uni email*      | [[mailto:tim.quelch@student.unimelb.edu.au][tim.quelch@student.unimelb.edu.au]]               |
 | *GitHub*         | [[https://github.com/TimQuelch][github.com/TimQuelch]]                            |
 | *LinkedIn*       | [[https://linkedin.com/in/TimQuelch][linkedin.com/in/TimQuelch]]                       |
 | *Twitter*        | [[https://twitter.com/TimQuelch][twitter.com/TimQuelch]]                           |
